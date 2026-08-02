@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./7.ico" type="image/x-icon">
+	<title>CSDXJL</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			background: #000000;
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			user-select: none;
+		}
+
+		.titlediv {
+			position: absolute;
+			margin-left: 2vw;
+		}
+
+		.title {
+			color: rgba(255, 255, 255, 1);
+			font-family: "Maple Mono NF CN", system-ui, sans-serif;
+			font-size: 7vw;
+			font-weight: lighter;
+		}
+
+		#titlediv-1 {
+			animation: titlediv-1 0.5s ease-in-out forwards;
+		}
+
+		@keyframes titlediv-1 {
+			0% {
+				transform: scale(1.0);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1.0);
+			}
+		}
+
+
+		#titlediv-2 {
+			animation: titlediv-2 0.5s ease-in-out forwards;
+		}
+
+		@keyframes titlediv-2 {
+			0% {
+				transform: translate(0vw, 0vh) scale(1.0);
+				opacity: 1.0;
+			}
+
+			100% {
+				transform: translate(12vw, 10vh) scale(1.7);
+				opacity: 0.3;
+			}
+		}
+
+		#titlediv-3 {
+			animation: titlediv-3 0.5s ease-in-out forwards;
+		}
+
+		@keyframes titlediv-3 {
+			0% {
+				transform: translate(0vw, 0vh) scale(1.0);
+				opacity: 1.0;
+			}
+
+			100% {
+				transform: translate(27vw, 30vh) scale(2.5);
+				opacity: 0.2;
+			}
+		}
+
+		#titlediv-4 {
+			animation: titlediv-4 0.5s ease-in-out forwards;
+		}
+
+		@keyframes titlediv-4 {
+			0% {
+				transform: translate(0vw, 0vh) scale(1.0);
+				opacity: 1.0;
+			}
+
+			100% {
+				transform: translate(65vw, 55vh) scale(5);
+				opacity: 0.1;
+			}
+		}
+
+		#introduction {
+			color: #ffffff;
+			font-family: "Maple Mono NF CN", system-ui, sans-serif;
+			font-weight: lighter;
+			font-size: 4vh;
+			font-style: italic;
+			white-space: nowrap;
+			animation: introduction 0.5s ease-in forwards;
+			transform: scale(0);
+			opacity: 0;
+		}
+
+		@keyframes introduction {
+			0% {
+				transform: scale(0);
+				opacity: 0;
+			}
+
+			100% {
+				transform: scale(1.0);
+				opacity: 1.0;
+			}
+		}
+
+		.pages {
+			height: 100vh;
+			width: 100vw;
+			position: absolute;
+			opacity: 0;
+			transform: scaleY(0);
+			transition: all 1s ease-in-out;
+			transform-origin: bottom center;
+		}
+
+		.active {
+			opacity: 1;
+			transform: scaleY(1);
+		}
+
+		.content {
+			width: 100vw;
+			height: 75vh;
+		}
+
+		.arrows {
+			width: 100vw;
+			height: 25vh;
+		}
+
+		#arrow {
+			color: #ffffffbb;
+			font-size: 5vw;
+			margin-left: 47.5vw;
+		}
+
+		#arrowtext {
+			color: #ffffff9c;
+			font-size: 3vh;
+			margin-left: 41vw;
+			font-family: "Maple Mono NF CN", system-ui, sans-serif;
+			font-weight: lighter;
+		}
+
+		#quotation {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#page1 {
+			background: linear-gradient(to right, #000000, #002437);
+		}
+
+		#page2 {
+			background: linear-gradient(to right, #060044, #000000);
+		}
+
+		#teachers {
+			height: 75vh;
+			width: 25vw;
+			display: flex;
+			align-items: start;
+			justify-content: center;
+			gap: 1vh;
+			flex-direction: column;
+			padding-left: 2vw;
+		}
+
+
+		#lines {
+			height: 75vh;
+			width: 75vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5vh;
+		}
+
+		.labels {
+			color: #ffffff;
+			font-family: 'Maple Mono NF CN', serif;
+			font-size: 5vh;
+			vertical-align: middle;
+		}
+
+		.checkboxes {
+			appearance: none;
+			width: 5vh;
+			height: 5vh;
+			border: #030007 solid 2px;
+			border-radius: 1vh;
+			background-color: #d1cdff;
+			position: relative;
+			vertical-align: middle;
+		}
+
+		.checkboxes:checked {
+			appearance: none;
+			width: 5vh;
+			height: 5vh;
+			border: #030007 solid 2px;
+			border-radius: 1vh;
+			background-color: #5849ff;
+		}
+
+		.checkboxes:checked::after {
+			content: '7';
+			color: #ffffff;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			display: grid;
+			place-items: center;
+			font-size: 3vh;
+			font-family: 'Maple Mono NF CN', serif;
+			font-weight: bold;
+		}
+
+		.eachline {
+			height: 5vh;
+			width: 100%;
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page1" class="pages active">
+		<div class="titlediv" id="titlediv-1">
+			<i class="title">C</i>
+			<i class="title">S</i>
+			<i class="title">D</i>
+			<i class="title">X</i>
+			<i class="title">J</i>
+			<i class="title">L</i>
+			<i id="introduction">'s personal page</i>
+		</div>
+		<div class="titlediv" id="titlediv-2">
+			<i class="title">C</i>
+			<i class="title">S</i>
+			<i class="title">D</i>
+			<i class="title">X</i>
+			<i class="title">J</i>
+			<i class="title">L</i>
+		</div>
+		<div class="titlediv" id="titlediv-3">
+			<i class="title">C</i>
+			<i class="title">S</i>
+			<i class="title">D</i>
+			<i class="title">X</i>
+			<i class="title">J</i>
+			<i class="title">L</i>
+		</div>
+		<div class="titlediv" id="titlediv-4">
+			<i class="title">C</i>
+			<i class="title">S</i>
+			<i class="title">D</i>
+			<i class="title">X</i>
+			<i class="title">J</i>
+			<i class="title">L</i>
+		</div>
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page2" class="pages">
+		<div class="content" id="quotation">
+			<div id="teachers">
+				<div id="linjieitem" class="teacheritems">
+					<input type="checkbox" name="linjie" id="linjie" class="checkboxes">
+					<label for="linjie" class="labels">Lin Jie</label>
+				</div>
+				<div id="laowuitem" class="teacheritems">
+					<input type="checkbox" name="laowu" id="laowu" class="checkboxes">
+					<label for="laowu" class="labels">Lao Wu</label>
+				</div>
+				<div id="fengfengitem" class="teacheritems">
+					<input type="checkbox" name="fengfeng" id="fengfeng" class="checkboxes">
+					<label for="fengfeng" class="labels">Feng Feng</label>
+				</div>
+				<div id="laozhangitem" class="teacheritems">
+					<input type="checkbox" name="laozhang" id="laozhang" class="checkboxes">
+					<label for="laozhang" class="labels">Lao Zhang</label>
+				</div>
+				<div id="laoyanitem" class="teacheritems">
+					<input type="checkbox" name="laoyan" id="laoyan" class="checkboxes">
+					<label for="laoyan" class="labels">Lao Yan</label>
+				</div>
+				<div id="laowangitem" class="teacheritems">
+					<input type="checkbox" name="laowang" id="laowang" class="checkboxes">
+					<label for="laowang" class="labels">Lao Wang</label>
+				</div>
+				<div id="laotianitem" class="teacheritems">
+					<input type="checkbox" name="laotian" id="laotian" class="checkboxes">
+					<label for="laotian" class="labels">Lao Tian</label>
+				</div>
+				<div id="laozhouitem" class="teacheritems">
+					<input type="checkbox" name="laozhou" id="laozhou" class="checkboxes">
+					<label for="laozhou" class="labels">Lao Zhou</label>
+				</div>
+				<div id="chunitem" class="teacheritems">
+					<input type="checkbox" name="chun" id="chun" class="checkboxes">
+					<label for="chun" class="labels">Chun</label>
+				</div>
+			</div>
+			<div id="lines">
+
+			</div>
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page3" class="pages">
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page4" class="pages">
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page5" class="pages">
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page6" class="pages">
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to continue……</p>
+		</div>
+	</div>
+	<div id="page7" class="pages">
+		<div class="content">
+
+		</div>
+		<div class="arrows">
+			<p id="arrow">&#8609;</p>
+			<p id="arrowtext">Scroll to nothing……</p>
+		</div>
+	</div>
+</body>
+<script>
+
+	//7777777777777777777777777777777777777777777777777
+	//EveryPage:翻页
+	//7777777777777777777777777777777777777777777777777
+
+	let pageindex = 1;
+	const maxpageindex = 7;
+	let height = window.innerHeight;
+	let width = window.innerWidth;
+	document.addEventListener("resize", e => {
+		height = window.innerHeight;
+		width = window.innerWidth;
+	})
+
+	let fingerY = 0;
+	document.addEventListener("touchstart", e => {
+		e.preventDefault();
+		if (e.touches.length == 1) {
+			const touch = e.touches[0];
+			fingerY = touch.clientY;
+		}
+	}, { passive: false })
+
+	document.addEventListener("touchmove", e => {
+		e.preventDefault();
+	}, { passive: false })
+
+	document.addEventListener("touchend", e => {
+		e.preventDefault();
+		if (e.changedTouches.length == 1) {
+			const touch = e.changedTouches[0];
+			if (touch.clientY - fingerY < 0) {
+				pageindex = pageindex == maxpageindex ? maxpageindex : pageindex + 1;
+				reloadPages();
+			} else if (touch.clientY - fingerY > 0) {
+				pageindex = pageindex == 1 ? 1 : pageindex - 1;
+				reloadPages();
+			}
+		}
+	}, { passive: false })
+
+	document.addEventListener("touchcancel", e => {
+		e.preventDefault();
+		if (e.changedTouches.length == 1) {
+			const touch = e.changedTouches[0];
+			if (touch.clientY - fingerY < 0) {
+				pageindex = pageindex == maxpageindex ? maxpageindex : pageindex + 1;
+				reloadPages();
+			} else if (touch.clientY - fingerY > 0) {
+				pageindex = pageindex == 1 ? 1 : pageindex - 1;
+				reloadPages();
+			}
+		}
+	}, { passive: false })
+
+	let wheelLock = false;
+	document.addEventListener("wheel", e => {
+		e.preventDefault();
+		if (wheelLock) return;
+
+		if (e.deltaY > 0) {
+			pageindex = pageindex == maxpageindex ? maxpageindex : pageindex + 1;
+		} else if (e.deltaY < 0) {
+			pageindex = pageindex == 1 ? 1 : pageindex - 1;
+		} else {
+			return;
+		}
+		reloadPages();
+
+		wheelLock = true;
+		setTimeout(() => wheelLock = false, 2000);
+	}, { passive: false });
+
+	function reloadPages() {
+		document.querySelectorAll('.pages').forEach(p => {
+			p.classList.remove('active');
+		})
+		const id = `page${pageindex}`;
+		const nextpage = document.getElementById(id);
+		nextpage.classList.add('active');
+		if (pageindex == 2) {
+			intervalid = setInterval(changequotation, animationinterval);
+		} else {
+			clearInterval(intervalid);
+			intervalid = null;
+		}
+	}
+
+	//7777777777777777777777777777777777777777777777777
+	//Page2:语录
+	//7777777777777777777777777777777777777777777777777
+
+		const quotations = {
+		linjie: [
+			"来，这个李岳",
+			"语文也很重要，学学语文吧",
+			"我靠，我还有个导练呢",
+			"这个李岳又错了",
+		],
+		laowu: [
+			"来吧，上吧",
+			"丰富多彩的函数世界，是由复合函数构成的",
+			"我就是一晚上不睡也要把这个做完",
+			"把你妈妈放倒",
+		],
+		fengfeng: [
+			"广告位招租",
+			"广告位招租",
+			"广告位招租",
+			"广告位招租",
+			"广告位招租",
+			"广告位招租",
+			"广告位招租",
+		],
+		laozhang: [
+			"啥毛病了",
+			"你们来这个班就不是求安逸的",
+			"Thank U so much! ",
+		],
+		laoyan: [
+			"不要一下课就上去害那个电脑",
+			"考完试你定反思呢啊",
+			"你的G\uFDD5物理意义是什么？",
+			"你们精英下去定学呢啊",
+			"苏搁哪拉了？",
+			"给持铁穿一个轩子",
+			"啊，好啊，我们来看一下啊",
+		],
+		laowang: [
+			"lhy我真就打死你了",
+			"以后你就叫F\uFDD4",
+			"好你个zzx",
+			"来lhy，你上来写一下滴定管的滴",
+		],
+		laozhou: [
+			"像我这样的手表就不能带",
+			"来翻开书，咱们继续瞎撇",
+			"你往一缸氢氧化钠里滴一滴盐酸",
+		],
+		laotian: [
+			"孩子们，咱们还有哪个双定没讲？",
+			"hz，发新学案了没",
+			"（喘气*2）累死我了",
+		],
+		chun: [
+			"\uFDD0\uFDD1™\uFDD2\uFDD3",
+			"哎你这就太狭隘了",
+			"他™要是再敢弄咱们，我收拾他",
+			"真善美",
+			"把它撕了，咱们要的是自然之美",
+			"本我，自我，超我",
+			"我当时要是有我这样的校长",
+			"我也是有私心的啊",
+		]
+	}
+	
+	const changelist = {
+		' ': '&nbsp;',
+		'™': '™️',
+		'\uFDD0': '2️⃣',
+		'\uFDD1': '🍎',
+		'\uFDD2': '5️⃣',
+		'\uFDD3': '💴',
+		'\uFDD4': '<sub>2</sub>',
+		'\uFDD5': '<sub>排</sub>',
+	}
+	/*
+		\uFDD0 7
+		\uFDD1 7
+		\uFDD2 7
+		\uFDD3 7
+		\uFDD4 7
+		\uFDD5 7
+		\uFDD6
+		\uFDD7
+		\uFDD8
+		\uFDD9
+		\uFDDA
+		\uFDDB
+		\uFDDC
+		\uFDDD
+		\uFDDE
+		\uFDDF
+		\uFDE0
+		\uFDE1
+		\uFDE2
+		\uFDE3
+	*/
+	
+	const maxr = 700;
+	const minr = 7;
+	const maxscale = 7;
+	const minscale = 0.07;
+	const animationtime = 1500;
+	const visualtime = 2000;
+	const prebreak = 100;
+	const postbreak = 100;
+	const animationinterval = 2 * animationtime + visualtime + prebreak + postbreak;
+	const charlist = Object.fromEntries(Object.entries(quotations).map(([key, arr]) => ([key, arr.map(e => [...e])])));
+
+	const teacherset = new Set();
+	document.querySelectorAll(".checkboxes").forEach(each => {
+		each.addEventListener("change", e => {
+			const target = e.target;
+			if (!target.classList.contains("checkboxes")) {
+				return;
+			}
+			if (target.checked) {
+				teacherset.add(target.id);
+				reloadpool();
+			} else {
+				teacherset.delete(target.id);
+				reloadpool();
+			}
+		})
+	})
+
+	let quotationpool = [];
+	function reloadpool() {
+		quotationpool = [];
+		for (const teacher of teacherset) {
+			const tempquotation = charlist[teacher];
+			quotationpool = [...quotationpool, ...tempquotation];
+		}
+	}
+
+	let intervalid = null;
+	let lastquotation = null;
+	let lastid = null;
+
+	function changequotation() {
+		if (quotationpool.length == 0) {
+			return;
+		}
+		const thisone = randomnorepeat();
+		const charcontainer = document.createElement('div');
+		thisone.forEach(e => {
+			const thischar = document.createElement('span');
+			thischar.style.fontFamily = "'Maple Mono NF CN', system-ui, sans-serif";
+			thischar.style.fontSize = '7vh';
+			thischar.style.color = '#ffffff';
+			if (changelist[e]) {
+				thischar.innerHTML = changelist[e];
+			} else {
+				thischar.innerHTML = e;
+			}
+			thischar.style.willChange = 'transform';
+			thischar.style.transform = randomtransform();
+			thischar.style.display = 'inline-block';
+			thischar.style.opacity = 0;
+			thischar.style.transition = 'all 0.5s ease-in-out';
+			charcontainer.appendChild(thischar);
+		})
+		if (lastid) {
+			document.getElementById(lastid).remove();
+		}
+		const thisid = Date.now();
+		charcontainer.id = thisid;
+		document.getElementById('lines').appendChild(charcontainer);
+		lastid = thisid;
+		setTimeout(() => {
+			document.getElementById(lastid).querySelectorAll(':scope > span').forEach(e => {
+				e.style.opacity = 1;
+				e.style.transform = 'translate(0,0) rotate(0deg) scale(1)';
+			})
+		}, prebreak);
+		setTimeout(() => {
+			document.getElementById(lastid).querySelectorAll(':scope > span').forEach(e => {
+				e.style.opacity = 0;
+				e.style.transform = randomtransform();
+			})
+		}, animationinterval - animationtime - postbreak);
+	}
+
+	function randomnorepeat() {
+		if(quotationpool.length==1){
+			return quotationpool[0];
+		}
+		const randomquotationid = Math.floor(Math.random() * quotationpool.length);
+		const thisquotation = quotationpool[randomquotationid];
+		if (thisquotation == lastquotation) {
+			return randomnorepeat();
+		} else {
+			lastquotation = thisquotation;
+			return thisquotation;
+		}
+	}
+
+	function randomtransform() {
+		const randomrotation = Math.random() * 360;
+		const randomr = Math.random() * (maxr - minr + 1) + minr;
+		const randomangle = Math.random() * 2 * Math.PI;
+		const randomx = Math.cos(randomangle) * randomr;
+		const randomy = Math.sin(randomangle) * randomr;
+		const randomscale = Math.random() * (maxscale - minscale + 1) + minscale;
+		return `translate(${randomx}px,${randomy}px) rotate(${randomrotation}deg) scale(${randomscale})`;
+	}
+
+	//7777777777777777777777777777777777777777777777777
+	//Page3:
+	//7777777777777777777777777777777777777777777777777
+
+
+</script>
+
+</html>

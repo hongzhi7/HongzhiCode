@@ -1,0 +1,602 @@
+{
+  "Monday": [
+    {
+      "Subject": "语文早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "体育",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学双定",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ],
+  "Tuesday": [
+    {
+      "Subject": "英语早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物、化学答疑",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理双定",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ],
+  "Wednesday": [
+    {
+      "Subject": "语文早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "体育",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学、化学答疑",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ],
+  "Thursday": [
+    {
+      "Subject": "英语早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学、物理答疑",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "班会",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ],
+  "Friday": [
+    {
+      "Subject": "语文早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理、生物答疑",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学双定",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ],
+  "Saturday": [
+    {
+      "Subject": "英语早读",
+      "StartTime": "07:10:00",
+      "EndTime": "07:40:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语",
+      "StartTime": "07:45:00",
+      "EndTime": "08:25:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学",
+      "StartTime": "08:50:00",
+      "EndTime": "09:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "物理",
+      "StartTime": "09:40:00",
+      "EndTime": "10:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学",
+      "StartTime": "10:30:00",
+      "EndTime": "11:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物",
+      "StartTime": "11:10:00",
+      "EndTime": "12:00:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "体育",
+      "StartTime": "14:30:00",
+      "EndTime": "15:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "15:20:00",
+      "EndTime": "16:00:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "语文",
+      "StartTime": "16:40:00",
+      "EndTime": "17:20:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学导练",
+      "StartTime": "17:25:00",
+      "EndTime": "18:25:00",
+      "IsSplitBelow": true,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "化学导讲",
+      "StartTime": "19:05:00",
+      "EndTime": "19:50:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "数学双定",
+      "StartTime": "19:50:00",
+      "EndTime": "20:30:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "英语双定",
+      "StartTime": "20:30:00",
+      "EndTime": "21:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    },
+    {
+      "Subject": "生物双定",
+      "StartTime": "21:20:00",
+      "EndTime": "22:10:00",
+      "IsSplitBelow": false,
+      "IsStrongClassOverNotificationEnabled": false
+    }
+  ]
+}
