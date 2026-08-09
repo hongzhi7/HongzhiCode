@@ -7,3 +7,5 @@
 - `*_plain.json`: Simple schedules in JSON format
 
 - `*_bscompatible.json`: Schedules that are compatible with **ZongziTek_Blackbord_Sticker** in JSON format
+
+    - `gen_schedule_*.py`: A very simple Python script to generate a JSON file mentioned above
